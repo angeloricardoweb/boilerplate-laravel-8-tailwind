@@ -2,10 +2,14 @@
 @section('title', 'Laravel 8 - Tailwind')
 @section('content')
 
+
     <h1 class="mt-2">users</h1>
 
-    @foreach ($users as $user)
-        <h2>{{ $user->name }}</h2>
-    @endforeach
+    <div class="flex flex-col gap-2">
+
+        @foreach ($users as $user)
+            <a href="{{ route('users.show', $user->id) }}" class="p-2 bg-zinc-300 w-64">{{ $user->name }} ></a>
+        @endforeach
+    </div>
 
 @endsection

@@ -343,7 +343,7 @@ eval("window._ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodas
   \***************************************/
 /***/ (() => {
 
-eval("console.log(\"Hello World!\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvbW9kdWxlcy9oZWxsby5qcy5qcyIsIm5hbWVzIjpbImNvbnNvbGUiLCJsb2ciXSwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9qcy9tb2R1bGVzL2hlbGxvLmpzP2E0ZjQiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc29sZS5sb2coXCJIZWxsbyBXb3JsZCFcIik7XHJcbiJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLGNBQVoifQ==\n//# sourceURL=webpack-internal:///./resources/js/modules/hello.js\n");
+eval("console.log(\"Hello World!\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9qcy9tb2R1bGVzL2hlbGxvLmpzP2E0ZjQiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc29sZS5sb2coXCJIZWxsbyBXb3JsZCFcIik7XHJcbiJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLGNBQVoiLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvbW9kdWxlcy9oZWxsby5qcy5qcyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/modules/hello.js\n");
 
 /***/ }),
 

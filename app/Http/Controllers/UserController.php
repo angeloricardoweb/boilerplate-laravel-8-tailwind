@@ -16,6 +16,25 @@ class UserController extends Controller
 
     public function show($id)
     {
-        return view('site.pages.user', ['id' => $id]);
+        if (!$user = User::find($id)) {
+            return back();
+        } else {
+            return view('site.pages.user', compact('user'));
+        }
+    }
+
+    public function create()
+    {
+        return view('site.pages.user-create');
+    }
+
+    public function store(Request $request)
+    {
+
+        $data = $request->all();
+        $data['password'] = bcrypt($request->password);
+        User::create($data);
+
+        return redirect()->route('users.index');
     }
 }

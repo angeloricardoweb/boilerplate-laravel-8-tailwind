@@ -11,8 +11,10 @@
         @component('site.components.header')
         @endcomponent
     </header>
+    <main class="container mx-auto px-2">
 
-    @yield('content')
+        @yield('content')
+    </main>
 
     <footer>
         @component('site.components.footer')
