@@ -48,7 +48,7 @@ class UserController extends Controller
         }
     }
 
-    public function update(Request $request, $id)
+    public function update(StoreUpdateUserFormRequest $request, $id)
     {
         if (!$user = User::find($id)) {
             return back();
@@ -59,6 +59,16 @@ class UserController extends Controller
             }
             $user->update($data);
 
+            return redirect()->route('users.index');
+        }
+    }
+
+    public function destroy($id)
+    {
+        if (!$user = User::find($id)) {
+            return back();
+        } else {
+            $user->delete();
             return redirect()->route('users.index');
         }
     }
