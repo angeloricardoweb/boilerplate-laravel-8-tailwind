@@ -6,6 +6,10 @@
     <h1 class="mt-2">users</h1>
 
     <div class="flex flex-col gap-2">
+        <form action="{{ route('users.index') }}" method="get" class="mb-4">
+            <input type="text" placeholder="pesquisar" name="search" class="border">
+            <input type="submit" value="Pesquisar" class="border">
+        </form>
 
         @foreach ($users as $user)
             <div>

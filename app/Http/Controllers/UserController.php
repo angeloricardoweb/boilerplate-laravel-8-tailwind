@@ -9,9 +9,19 @@ use App\Models\User;
 class UserController extends Controller
 {
     //
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::all();
+
+
+        $search = $request->search;
+
+        $users = User::where(function ($query) use ($search) {
+            if ($search) {
+                $query->where('email', $search);
+                $query->orWhere('name', 'LIKE', "%{$search}%");
+            }
+        })->get();
+
         return view('site.pages.users', compact('users'));
     }
 
